@@ -214,3 +214,42 @@ body {
         width: 100%;
     }
 }
+
+
+
+.curve-line {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.curve-line svg {
+  width: 100%;
+  height: 100%;
+}
+
+.curve-line path {
+  fill: none;
+  stroke: url(#grad);
+  stroke-width: 4;
+}
+
+svg defs {
+  display: none;
+}
+
+/* gradient */
+.curve-line svg {
+  stroke-linecap: round;
+}
+
+.curve-line path {
+  stroke: linear-gradient;
+  stroke: url(#gradient);
+}
+
+.title{
+  color:#fff;
+  padding: 10px 40px;
+}
+
