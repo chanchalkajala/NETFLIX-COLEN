@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Clone</title>
+  <title>Netflix clone</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -23,65 +23,67 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header">
-    <img src="./project/Netflix_Logo_PMS.png" alt="Netflix Logo">
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <img src="./project/Netflix_Logo_PMS.png" alt="Netflix Logo">
 
-    <div class="header-right">
-      <div class="lang-box">
-        <i class="fa-solid fa-globe"></i>
-        <select class="lang">
-          <option>English</option>
-          <option>Hindi</option>
-        </select>
-      </div>
-
-      <button class="signin">Sign In</button>
+  <div class="header-right">
+    <div class="lang-box">
+      <i class="fa-solid fa-globe"></i>
+      <select class="lang">
+        <option>English</option>
+        <option>Hindi</option>
+      </select>
     </div>
-  </header>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero">
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-      <h1>Unlimited movies, shows and more</h1>
-      <h2>Starts at ₹149. Cancel at any time.</h2>
-      <p>Ready to watch? Enter your email to create or restart your membership.</p>
-
-      <div class="email-box">
-        <input type="email" placeholder="Email address">
-        <button>Get Started &gt;</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CURVE LINE ================= -->
-  <div class="curve-line">
-    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-
-      <!-- Gradient definition -->
-      <defs>
-        <linearGradient id="netflixGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#ff004f"/>
-          <stop offset="50%" stop-color="#ff2f92"/>
-          <stop offset="100%" stop-color="#7b2cff"/>
-        </linearGradient>
-      </defs>
-
-      <!-- Curve path -->
-      <path
-        d="M0,40 C300,0 900,0 1200,40"
-        fill="none"
-        stroke="url(#netflixGradient)"
-        stroke-width="4"
-        stroke-linecap="round"
-      />
-    </svg>
+    <button class="signin">Sign In</button>
   </div>
+</header>
 
-  <!-- ================= TRENDING TITLE ================= -->
-  <h2 class="title">Trending Now</h2>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Unlimited movies, shows and more</h1>
+    <h2>Starts at ₹149. Cancel at any time.</h2>
+    <p>
+      Ready to watch? Enter your email to create or restart your membership.
+    </p>
+
+    <div class="email-box">
+      <input type="email" placeholder="Email address">
+      <button>Get Started &gt;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SVG CURVE LINE (ADDED) ================= -->
+<div class="curve-line">
+  <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+
+    <!-- gradient -->
+    <defs>
+      <linearGradient id="netflixGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ff004f"/>
+        <stop offset="50%" stop-color="#ff2f92"/>
+        <stop offset="100%" stop-color="#7b2cff"/>
+      </linearGradient>
+    </defs>
+
+    <!-- curve -->
+    <path
+      d="M0,40 C300,0 900,0 1200,40"
+      fill="none"
+      stroke="url(#netflixGradient)"
+      stroke-width="4"
+      stroke-linecap="round"
+    />
+  </svg>
+</div>
+
+<!-- ================= TITLE ================= -->
+<h2 class="title">Trending Now</h2>
 
 </body>
 </html>
