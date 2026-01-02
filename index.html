@@ -12,13 +12,7 @@
   <link rel="icon" href="./favicon.ico">
 
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -42,8 +36,7 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="overlay"></div>
-
+  <!-- The ::before pseudo-element in CSS handles the background image -->
   <div class="hero-content">
     <h1>Unlimited movies, shows and more</h1>
     <h2>Starts at ₹149. Cancel at any time.</h2>
@@ -58,11 +51,9 @@
   </div>
 </section>
 
-<!-- ================= SVG CURVE LINE (ADDED) ================= -->
+<!-- ================= SVG CURVE LINE ================= -->
 <div class="curve-line">
   <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-
-    <!-- gradient -->
     <defs>
       <linearGradient id="netflixGradient" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="#ff004f"/>
@@ -70,8 +61,6 @@
         <stop offset="100%" stop-color="#7b2cff"/>
       </linearGradient>
     </defs>
-
-    <!-- curve -->
     <path
       d="M0,40 C300,0 900,0 1200,40"
       fill="none"
@@ -82,8 +71,62 @@
   </svg>
 </div>
 
-<!-- ================= TITLE ================= -->
-<h2 class="title">Trending Now</h2>
+<!-- ================= TRENDING ================= -->
+<section class="trending">
+  <h2>Trending Now</h2>
+
+  <div class="trending-row">
+    <div class="trend-card">
+      <span class="rank">1</span>
+      <img src="./project/Tranding-mig1.webp" alt="Trending 1">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">2</span>
+      <img src="./project/Tranding-mig2.webp" alt="Trending 2">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">3</span>
+      <img src="./project/Tranding-img3.webp" alt="Trending 3">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">4</span>
+      <img src="./project/Trending-img4.webp" alt="Trending 4">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">5</span>
+      <img src="./project/Tranding-img6.webp" alt="Trending 5">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">6</span>
+      <img src="./project/Tranding-img5.webp" alt="Trending 6">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">7</span>
+      <img src="./project/Tranding-img7.webp" alt="Trending 7">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">8</span>
+      <img src="./project/Traning-img8.webp" alt="Trending 8">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">9</span>
+      <img src="./project/Traning-img9.webp" alt="Trending 9">
+    </div>
+
+    <div class="trend-card">
+      <span class="rank">10</span>
+      <img src="./project/Tranding-img10.webp" alt="Trending 10">
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
